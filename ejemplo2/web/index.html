@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title> Campos de texto</title>
+    </head>
+    <body>
+        <p>
+            Username: <input type="text" name="cuenta" value="juanjo"> <br> 
+            Contraseña: <input type="password" name="password" value="juanjo3474">
+            <br>
+            Campo Oculto: <input type="hidden" name="codigo" value="usuario1"> <br>
+        </p>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title> Tablas </title>
+    </head>
+    <body>
+        <h1> Ejemplo de Tabla </h1>
+        <table cellspacing="4" cellpadding="3" border="1">
+            <tr>
+                <td align="center"> Nombre</td>
+                <td align="center"> Apellidos</td>
+                <td align="center"> Calificacion</td>
+            </tr>
+            <tr>
+                <td > Nombre 1</td>
+                <td > Apellidos 1</td>
+                <td > Calific. 1</td>
+            </tr>
+            <tr>
+                <td > Nombre 2</td>
+                <td > Apellidos 2</td>
+                <td > Calific. 2</td>
+            </tr>
+            <tr>
+                <td > Nombre 3</td>
+                <td > Apellidos 3</td>
+                <td > Calific. 3</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title> imagenes </title>
+    </head>
+    <body>
+        <h1> Imagenes en una pagina web </h1>
+
+        <img src="car.jpg" width="200" height="200"
+             align="left" alt="no se pudo mostrar la imagen"> 
+
+        <img src="car2.jpg" width="200" height="200"
+             align="left" alt="no se pudo mostrar la imagen">
+    </body>    
+</html>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title> Texto y Botones</title>
+    </head>
+    <body>
+        <h1> Ejemplo de Campos de Texto y Botones</h1>
+        <p> Despues de introducir sus datos oprima el boton "ok"
+        </p>
+        <form action="paginaDestino.jsp" >
+            <p>
+                Nombre: <input type="text" name="Nombre"> <br>
+                Apellido1: <input type="text" name="apell1"> <br>
+                Apellido2: <input type="text" name="apell2"> <br>
+                Telefono: <input type="text" name="tel">
+            </p>
+            <input type="submit" value="Ok">
+        </form>
+    </body>
+</html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type"
+              content="text/html; charset=UTF-8">
+        <title> Texto y Botones</title>
+    </head>
+    <body>
+        <h1> Campos de Texto y Botones</h1>
+        <p> Campo fuera del formulario: <input type="text" name="C"
+                                               value= "Datos del Campo"></p>
+        <p> Despues de introducir sus datos oprima el boton "ok"
+        </p>
+        <form action="paginaDestino.jsp" >
+            <p>
+                Nombre: <input type="text" name="Nombre"> <br>
+                Apellido1: <input type="text" name="apell1"> <br>
+                Apellido2: <input type="text" name="apell2"> <br>
+                Telefono: <input type="text" name="tel">
+                <input type="reset" value="Borrar">
+            </p>
+            <input type="submit" value="Ok">
+        </form>
+    </body>
+</html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type"
+              content="text/html; charset=UTF-8">
+        <title> Lista de opciones (list box)</title>
+    </head>
+    <body>
+        <h1> Ejemplo de Radio-Botones <br> (Radio Buttons) </h1>
+        <p> Elije que transporte prefieres </p>
+
+        <input type="radio" name="transporte" value="Automovil"checked> Coche
+        <input type="radio" name="transporte" value="Avion"> Avión
+        <input type="radio" name="transporte" value="Camion"> Autobus <br>
+
+        <p> Cuales son tus destinos favoritos? </p>
+
+        <input type="radio" name="ciudad" value="Ciudad"> Ciudad <br>
+        <input type="radio" name="bosque" value="Bosque"> Bosque <br>
+        <input type="radio" name="playa" value="Playa"> Playa <br>
+
+    </body>
+</html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type"
+              content="text/html; charset=UTF-8">
+        <title> Lista de opciones (list box)</title>
+    </head>
+    <body>
+        <h1> Ejemplo de Lista de Opciones </h1>
+        <p> Elije que transporte prefieres </p>
+
+        <select name="transporte">
+            <option selected>Coche</option>
+            <option>Avión</option>
+            <option>Autobus</option>
+        </select>
+    </body>
+</html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type"
+              content="text/html; charset=UTF-8">
+        <title> Lista de opciones (list box)</title>
+    </head>
+    <body>
+        <h1> Ejemplo de Lista de Opciones </h1>
+        <p> Elije que transporte prefieres </p>
+
+        <select name="destinos" multiple>
+            <option>Ciudad</option>
+            <option>Bosque</option>
+            <option selected>Playa</option>
+        </select>
+    </body>
+</html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title> Area de Texto </title>
+    </head>
+    <body>
+
+        <h1> Area de Texto </h1>
+        <p> se puede desplegar texto por default </p>
+        <textarea name="areal" rows="3" cols="30"> Si la cantidad de palabras 
+            del texto es mayor a los tres reglones que se especificaron para esta area
+            de texto, entonces se despliega automaticamente una barra de desplazamiento
+            vertical.    
+        </textarea>
+
+        <p> O puede ser un area en blanco para capturar texto </p>
+        <textarea name="area2" rows="4" cols="60"></textarea>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type"
+              content="text/html; charset=UTF-8">
+        <title> JSP 1 </title>
+    </head>
+    <body>
+        <h1> Esta es la  pagina 1 </h1>
+        <p> <i>Clic</i> en uno de los enlaces para ir a otra pagina </p>
+        <a href="pagina2.jsp"> Ir a pagina 2</a> <br>
+        <a href="pagina3.jsp"> Ir a pagina 3</a>
+    </body>
+</html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type"
+              content="text/html; charset=UTF-8">
+        <title> JSP 2 </title>
+    </head>
+    <body>
+        <h1> Esta es la  pagina 2 </h1>
+        <p> <i>Clic</i> en uno de los enlaces para ir a otra pagina </p>
+        <a href="pagina2.jsp"> Ir a pagina 1</a> <br>
+        <a href="pagina3.jsp"> Ir a pagina 3</a>
+    </body>
+</html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type"
+              content="text/html; charset=UTF-8">
+        <title> JSP 3 </title>
+    </head>
+    <body>
+        <h1> Esta es la  pagina 3 </h1>
+        <p> <i>Clic</i> en uno de los enlaces para ir a otra pagina </p>
+        <a href="pagina2.jsp"> Ir a pagina 1</a> <br>
+        <a href="pagina3.jsp"> Ir a pagina 2</a>
+    </body>
+</html>
+
+
+
+
+
